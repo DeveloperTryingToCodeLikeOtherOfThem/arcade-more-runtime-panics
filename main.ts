@@ -52,6 +52,7 @@ namespace control {
     //% blockId=control_oops block="panic Oops, we could not run this project. Please check your code for errors."
   //% blockNamespace=Control
   //% shim=TD_NOOP
+  //% color="0xFF6600"
   /**
    * Warning do not use this only if you want to crash the engine immeditely
    * it triggers a real runtime panic and I recommend not use it only if you are sure you rather to use it
