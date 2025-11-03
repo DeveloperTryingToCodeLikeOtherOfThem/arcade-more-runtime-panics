@@ -12,6 +12,7 @@ interface Boolean extends control.Error {
 
 declare type error = control.Error 
 
+//% advanced=true icon="\uf110"
 namespace Control {
     let _idShim = control.deviceDalVersion() === "sim"
 }
