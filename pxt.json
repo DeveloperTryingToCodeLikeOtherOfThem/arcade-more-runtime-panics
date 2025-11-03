@@ -1,5 +1,5 @@
 {
-    "name": "a",
+    "name": "panics",
     "description": "",
     "dependencies": {
         "device": "*"
