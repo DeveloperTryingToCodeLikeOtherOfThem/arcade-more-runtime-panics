@@ -51,6 +51,17 @@ namespace control {
 
     //% blockId=control_oops block="controls getting the panic of Oops we could not run this project"
   //% blockNamespace=Control
+  //% shim=TD_NOOP
+  /**
+   * Warning do not use this only if you want to crash the engine immeditely
+   * it triggers a real runtime panic and I recommend not use it only if you are sure you rather to use it
+   * You do not need to exactly do control.oops()
+   * you can just do control.oops because the runtime 
+   * already scans the function because of the name of it 
+   * for TS only 
+   * Also using pause or anything to wait until will 
+   * not work because those are for the simulator not for the web.
+   */
  export function oops(line = 0) {
  target_panic(new ErrorConstructor(), line)  // the line is not neccessary just for extra
  }
