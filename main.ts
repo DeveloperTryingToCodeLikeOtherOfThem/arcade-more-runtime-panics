@@ -49,7 +49,7 @@ namespace control {
         }
     }
 
-    //% blockId=control_oops block="panic Oops, we could not run this project, please check your code for errors."
+    //% blockId=control_oops block="panic Oops, we could not run this project. Please check your code for errors."
   //% blockNamespace=Control
   //% shim=TD_NOOP
   /**
