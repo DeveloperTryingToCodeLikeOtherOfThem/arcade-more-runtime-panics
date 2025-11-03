@@ -13,7 +13,6 @@ interface Boolean extends control.Error {
 declare type error = control.Error 
 
 //% blockNamespace=Control
-
 namespace Control {
     let _idShim = control.deviceDalVersion() === "sim"
 }
