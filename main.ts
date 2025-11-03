@@ -16,7 +16,7 @@ declare type error = control.Error
 namespace Control {
     let _idShim = control.deviceDalVersion() === "sim"
 }
-
+// control.oops()
 namespace control {
     export interface Error {
         message: (line: any) => string
