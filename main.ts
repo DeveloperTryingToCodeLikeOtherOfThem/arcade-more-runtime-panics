@@ -12,7 +12,6 @@ interface Boolean extends control.Error {
 
 declare type error = control.Error 
 
-//% blockNamespace=Control
 namespace Control {
     let _idShim = control.deviceDalVersion() === "sim"
 }
@@ -27,7 +26,7 @@ namespace control {
         prototype: ErrorConstructor
 
         constructor(message?: () => string) {
-            this.getPrototype().message = message
+            this.getPrototype().message = message // this is a hack
         }
 
         message(line: any): string {
@@ -51,7 +50,8 @@ namespace control {
     }
 
     //% blockId=control_oops block="controls getting the panic of Oops we could not run this project"
- export function oops() {
- target_panic(new ErrorConstructor(), 5) 
+  //% blockNamespace=Control
+ export function oops(line = 0) {
+ target_panic(new ErrorConstructor(), line)  // the line is not neccessary just for extra
  }
 }
